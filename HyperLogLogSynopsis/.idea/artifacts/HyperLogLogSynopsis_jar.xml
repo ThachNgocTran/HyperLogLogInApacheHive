@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="HyperLogLogSynopsis:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/HyperLogLogSynopsis_jar</output-path>
+    <root id="archive" name="HyperLogLogSynopsis.jar">
+      <element id="module-output" name="CoreModule" />
+      <element id="module-output" name="HyperLogLogSynopsis" />
+    </root>
+  </artifact>
+</component>

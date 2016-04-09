@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../CoreProject/CoreModule/CoreModule.iml" filepath="$PROJECT_DIR$/../CoreProject/CoreModule/CoreModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HyperLogLogMergeAndCount.iml" filepath="$PROJECT_DIR$/HyperLogLogMergeAndCount.iml" />
+    </modules>
+  </component>
+</project>

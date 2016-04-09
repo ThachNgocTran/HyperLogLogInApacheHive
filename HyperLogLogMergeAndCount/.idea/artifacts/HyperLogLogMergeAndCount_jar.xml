@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="HyperLogLogMergeAndCount:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/HyperLogLogMergeAndCount_jar</output-path>
+    <root id="archive" name="HyperLogLogMergeAndCount.jar">
+      <element id="module-output" name="HyperLogLogMergeAndCount" />
+      <element id="module-output" name="CoreModule" />
+    </root>
+  </artifact>
+</component>
