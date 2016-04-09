@@ -24,7 +24,7 @@ import java.util.Locale;
 
 add jar hdfs://[some address where Hive can find...]/HyperLogLogSynopsis.jar;
 
-create temporary function HyperLogLogSynopsis as 'HyperLogLogSynopsis';
+create temporary function HyperLogLogSynopsis as 'com.mycompany.HyperLogLogSynopsis';
 
 INSERT OVERWRITE TABLE hllSynopsis
 SELECT t.dt, HyperLogLogSynopsis(t.ip)

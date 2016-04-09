@@ -21,6 +21,18 @@ import org.apache.hadoop.hive.serde2.typeinfo.TypeInfo;
 import java.util.ArrayList;
 import java.util.Locale;
 
+/* HOW TO USE IN HIVE: Supposed that "hll" field is of Byte Array type.
+-- Calculate the cardinality from the HLL synopses.
+add jar hdfs://[some address where Hive can find...]/HyperLogLogMergeAndCount.jar;
+
+create temporary function HyperLogLogMergeAndCount as 'com.mycompany.HyperLogLogMergeAndCount';
+
+SELECT HyperLogLogMergeAndCount(t.hll)
+FROM hllsynopsis t
+WHERE t.dt IN ( '20141201', '20141202', '20141203', '20141204', 
+                     '20141205', '20141206', '20141207')
+*/
+
 public class HyperLogLogMergeAndCount extends AbstractGenericUDAFResolver {
 
     public GenericUDAFEvaluator getEvaluator(TypeInfo[] parameters) throws SemanticException {
