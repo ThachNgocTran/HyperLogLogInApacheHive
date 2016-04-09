@@ -1,4 +1,4 @@
-# HyperLogLogInApacheHive
+# HyperLogLog In Apache Hive
 Integrate HyperLogLog into Apache Hive under the form of User-Defined Aggregate Function (UDAF). Written in JAVA.
 
 There are many blogs explaining how HyperLogLog works. We even have a few open-source implementations of HyperLogLog (in Java, Python, C++). Documentation on writing UDAF for Apache Hive is readily available. My contribution here is an attempt to integrate HyperLogLog into Apache Hive under the form of UDAF. The beauty is that HyperLogLog can surprisingly fit in Distributed Computing. Let's say: One mapper digests its data part, making one HyperLogLog instance; then at Reducer, all of these instances are merged into one single HyperLogLog instance that represents all of the (large) original data.
