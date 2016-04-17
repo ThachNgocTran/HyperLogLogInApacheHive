@@ -3,7 +3,12 @@ Integrate HyperLogLog into Apache Hive under the form of User-Defined Aggregate 
 
 There are many blogs explaining how HyperLogLog works. We even have a few open-source implementations of HyperLogLog (in Java, Python, C++). Documentation on writing UDAF for Apache Hive is readily available. My contribution here is an attempt to integrate HyperLogLog into Apache Hive under the form of UDAF. The beauty is that HyperLogLog can surprisingly fit in Distributed Computing. Let's say: One mapper digests its data part, making one HyperLogLog instance; then at Reducer, all of these instances are merged into one single HyperLogLog instance that represents all of the (large) original data.
 
-Please see [How to write an User-Defined Aggregate Function (UDAF) in Apache Hive?](https://thachtranerc.wordpress.com/2016/01/02/how-to-write-an-user-defined-aggregate-function-udaf-in-apache-hive/) and [Cardinality Estimation with HyperLogLog – An empirical evaluation] (https://thachtranerc.wordpress.com/2016/01/23/cardinality-estimation-with-hyperloglog-an-empirical-evaluation/) and [Here is how HyperLogLog fits in Distributed Computing] (https://thachtranerc.wordpress.com/2016/01/25/here-is-how-hyperloglog-fits-in-distributed-computing/) for further information.
+Please see:
+
+* [Integrate HyperLogLog into Apache Hive] (https://thachtranerc.wordpress.com/2016/04/11/integrate-hyperloglog-into-apache-hive/)
+* [How to write an User-Defined Aggregate Function (UDAF) in Apache Hive?](https://thachtranerc.wordpress.com/2016/01/02/how-to-write-an-user-defined-aggregate-function-udaf-in-apache-hive/)
+* [Cardinality Estimation with HyperLogLog – An empirical evaluation] (https://thachtranerc.wordpress.com/2016/01/23/cardinality-estimation-with-hyperloglog-an-empirical-evaluation/)
+* [Here is how HyperLogLog fits in Distributed Computing] (https://thachtranerc.wordpress.com/2016/01/25/here-is-how-hyperloglog-fits-in-distributed-computing/)
 
 Notes:
 
